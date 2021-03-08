@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class Student {
 
@@ -5,10 +6,10 @@ public class Student {
 	private String name;
 	private int id;
 	private double percentage;
-	private String[] skills;
+	private ArrayList<String> skills;
 	
 	//Initializing Constructor 1
-	public Student(String name,int id,double percentage,String[] skills) {
+	public Student(String name,int id,double percentage,ArrayList<String> skills) {
 		this.name=name;
 		this.id=id;
 		this.percentage=percentage;
@@ -40,10 +41,10 @@ public class Student {
 	public void setPercentage(double percentage) {
 		this.percentage = percentage;
 	}
-	public String[] getSkills() {
+	public ArrayList<String> getSkills() {
 		return skills;
 	}
-	public void setSkills(String[] skills) {
+	public void setSkills(ArrayList<String> skills) {
 		this.skills = skills;
 	}
 	
